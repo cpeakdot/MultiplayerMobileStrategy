@@ -38,8 +38,15 @@ namespace MMS.PLAYER
             {
                 for (int i = 0; i < TIMBER_COUNT; i++)
                 {
+                    float randomX = UnityEngine.Random.Range(-3f, 3f);
+                    float randomZ = UnityEngine.Random.Range(-3f, 3f);
                     GameObject timberInstance =
-                        PhotonNetwork.Instantiate(timberManPrefab.name, new Vector3(5f, 0f, 5f), Quaternion.identity, 0 , new object[] {photonView.ViewID});
+                        PhotonNetwork.Instantiate(
+                            timberManPrefab.name, 
+                            new Vector3(5f + randomX, 0f, 5f + randomZ), 
+                            Quaternion.identity, 
+                            0 , 
+                            new object[] {photonView.ViewID});
                     myTimbers.Add(timberInstance.GetComponent<TimberManController>());
                 }
 

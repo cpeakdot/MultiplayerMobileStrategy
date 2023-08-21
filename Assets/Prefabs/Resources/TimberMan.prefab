@@ -57,7 +57,7 @@ MonoBehaviour:
   animator: {fileID: 463931578154367589}
   selectedVisual: {fileID: 6762490984878353475}
   walkSpeed: 3
-  stoppingDistanceToNode: 0.2
+  stoppingDistanceToNode: 0.25
   stoppingDistanceToTree: 2
   choppingActionDuration: 2
   woodEarnAmount: 1
