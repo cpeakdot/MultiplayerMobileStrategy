@@ -42,7 +42,7 @@ namespace MMS.Menu
                     string playerNickName;
                     if (player.Value.NickName == "")
                     {
-                        playerNickName = "Player " + PhotonNetwork.CurrentRoom.PlayerCount;
+                        playerNickName = "Player " + player.Key;
                     }
                     else
                     {
